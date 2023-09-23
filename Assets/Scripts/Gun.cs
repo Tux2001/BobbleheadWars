@@ -1,0 +1,34 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Gun : MonoBehaviour
+{
+    public GameObject bulletPrefab;
+    public Transform launchPosition;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
+
+    //Instantiates bulletPrefab for SpaceMarine
+    void fireBullet()
+    {
+        //1
+        GameObject bullet = Instantiate(bulletPrefab) as GameObject;
+        //2
+        bullet.transform.position = launchPosition.position;
+        //3
+        bullet.GetComponent<Rigidbody>().velocity =
+            transform.parent.forward * 100;
+
+    }
+}
