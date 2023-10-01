@@ -293,6 +293,76 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   followTarget: {fileID: 1652715243}
   moveSpeed: 20
+--- !u!1 &305299480 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 92d62012163fd3446ad5dfab19fee588, type: 3}
+  m_PrefabInstance: {fileID: 1165216043}
+  m_PrefabAsset: {fileID: 0}
+--- !u!59 &305299481
+HingeJoint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 305299480}
+  m_ConnectedBody: {fileID: 566674332}
+  m_ConnectedArticulationBody: {fileID: 0}
+  m_Anchor: {x: 0, y: 0, z: 0}
+  m_Axis: {x: 0, y: 0, z: 1}
+  m_AutoConfigureConnectedAnchor: 0
+  m_ConnectedAnchor: {x: -2.06, y: 6.16, z: 0.16}
+  m_UseSpring: 0
+  m_Spring:
+    spring: 0
+    damper: 0
+    targetPosition: 0
+  m_UseMotor: 0
+  m_Motor:
+    targetVelocity: 0
+    force: 0
+    freeSpin: 0
+  m_UseLimits: 1
+  m_Limits:
+    min: -25
+    max: 25
+    bounciness: 1
+    bounceMinVelocity: 0.2
+    contactDistance: 0
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_EnableCollision: 0
+  m_EnablePreprocessing: 1
+  m_MassScale: 1
+  m_ConnectedMassScale: 1
+--- !u!54 &305299482
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 305299480}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!135 &305299483
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 305299480}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 2.36
+  m_Center: {x: 0.41, y: 2.7, z: -0.21}
 --- !u!1001 &315801458
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -496,6 +566,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 7231337060781523250, guid: d1ff1d1d78c07b64b89269c6bc008087, type: 3}
   launchPosition: {fileID: 2146226109}
+--- !u!54 &566674332
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 566674330}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &572463053 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8789080383602503757, guid: 57b2832dace9ded4e8e0c7f350669b2f, type: 3}
@@ -1134,9 +1220,61 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7853023984344937921, guid: 92d62012163fd3446ad5dfab19fee588, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: -4501829781484411520, guid: 92d62012163fd3446ad5dfab19fee588, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: -1946185775847271727, guid: 92d62012163fd3446ad5dfab19fee588, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: -1079185258199196343, guid: 92d62012163fd3446ad5dfab19fee588, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: -962066394388421515, guid: 92d62012163fd3446ad5dfab19fee588, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: -259972160606440404, guid: 92d62012163fd3446ad5dfab19fee588, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: -87477765198896017, guid: 92d62012163fd3446ad5dfab19fee588, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: -72580882300861787, guid: 92d62012163fd3446ad5dfab19fee588, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 92d62012163fd3446ad5dfab19fee588, type: 3}
       propertyPath: m_Name
       value: BobbleMarine-Head
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 92d62012163fd3446ad5dfab19fee588, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 2538266708927096140, guid: 92d62012163fd3446ad5dfab19fee588, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 6046299050113825370, guid: 92d62012163fd3446ad5dfab19fee588, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 6423476907533783930, guid: 92d62012163fd3446ad5dfab19fee588, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 6520748301099313529, guid: 92d62012163fd3446ad5dfab19fee588, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 92d62012163fd3446ad5dfab19fee588, type: 3}
@@ -1367,6 +1505,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 50
+  head: {fileID: 305299482}
 --- !u!1001 &1899404212
 PrefabInstance:
   m_ObjectHideFlags: 0
