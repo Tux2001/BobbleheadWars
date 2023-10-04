@@ -89,14 +89,15 @@ public class GameManager : MonoBehaviour
                         newAlien.transform.position = spawnLocation.transform.position;
                         //get the "Alien" code from the new Alien spawned
                         Alien alienScript = newAlien.GetComponent<Alien>();
+                        
                         //set the new alien target to where the player currently is
                         //NOTE: GameManager code affecting Alien code
                         alienScript.target = player.transform;
 
                         //the new Aliens turn towards the player
                         Vector3 targetRotation = new Vector3(player.transform.position.x,
-                                                newAlien.transform.position.y, player.transform.position.z);
-                        newAlien.transform.LookAt(targetRotation);
+                                                                 newAlien.transform.position.y, player.transform.position.z);
+                                                                     newAlien.transform.LookAt(targetRotation);
                     }
                 }
             }
