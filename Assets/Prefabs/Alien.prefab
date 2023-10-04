@@ -70,6 +70,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
+  navigationUpdate: 0.5
 --- !u!54 &-1942726098758977332
 Rigidbody:
   m_ObjectHideFlags: 0
