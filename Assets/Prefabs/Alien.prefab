@@ -12,7 +12,8 @@ GameObject:
   - component: {fileID: 1009687851231946943}
   - component: {fileID: -3657953253095987723}
   - component: {fileID: -1942726098758977332}
-  m_Layer: 0
+  - component: {fileID: 9132197746996322297}
+  m_Layer: 8
   m_Name: Alien
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -87,6 +88,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!135 &9132197746996322297
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8789080383602503757}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 2.52
+  m_Center: {x: 0.34, y: 2.54, z: 0.57}
 --- !u!1001 &8789080383901546145
 PrefabInstance:
   m_ObjectHideFlags: 0

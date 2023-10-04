@@ -27,7 +27,13 @@ public class Alien : MonoBehaviour
             {
                 agent.destination = target.position;
                 navigationTime = 0;
+
+
             }
         }
+    }
+    void OnTriggerEnter(Collider other)
+    {
+        Destroy(gameObject);
     }
 }
