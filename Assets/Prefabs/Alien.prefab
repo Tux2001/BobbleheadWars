@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: -3657953253095987723}
   - component: {fileID: -1942726098758977332}
   - component: {fileID: 9132197746996322297}
+  - component: {fileID: -5897633808114292835}
   m_Layer: 8
   m_Name: Alien
   m_TagString: Untagged
@@ -101,6 +102,25 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 2.52
   m_Center: {x: 0.34, y: 2.54, z: 0.57}
+--- !u!95 &-5897633808114292835
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8789080383602503757}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 7df968ec880694920bcb46964b9d62a4, type: 3}
+  m_Controller: {fileID: 9100000, guid: f31b7a451b3a4b349af894b5fe7fba3d, type: 2}
+  m_CullingMode: 1
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!95 &687302710
 Animator:
   serializedVersion: 3
