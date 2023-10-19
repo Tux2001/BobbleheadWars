@@ -40,6 +40,12 @@ public class GameManager : MonoBehaviour
         currentSpawnTime += Time.deltaTime;
         currentUpgradeTime += Time.deltaTime;
 
+        //stops spawning enemies if there is no player
+        if (player == null)
+        {
+            return;
+        }
+
         if (currentUpgradeTime > actualUpgradeTime)
         {
             // 1

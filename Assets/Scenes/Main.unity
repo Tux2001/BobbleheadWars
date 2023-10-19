@@ -699,6 +699,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!136 &566674335
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 566674330}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  m_Radius: 2.08
+  m_Height: 0.24
+  m_Direction: 1
+  m_Center: {x: -1.61, y: 3.58, z: 0}
 --- !u!1 &582625580
 GameObject:
   m_ObjectHideFlags: 0
@@ -2019,6 +2033,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9988057ce8a8bb840a7f309f1b2bab92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  marineBody: {fileID: 566674332}
+  timeBetweenHits: 2.5
   hitForce:
   - 0.1
   - 0.2
