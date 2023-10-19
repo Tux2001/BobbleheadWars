@@ -71,6 +71,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9c44c8104090d74b9290a8dcd7c1e8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnDestroy:
+    m_PersistentCalls:
+      m_Calls: []
   target: {fileID: 0}
   navigationUpdate: 0.5
 --- !u!54 &-1942726098758977332
