@@ -7,6 +7,8 @@ public class GameManager : MonoBehaviour
     public GameObject player;
     public GameObject[] spawnPoints;
     public GameObject alien;
+    public GameObject deathFloor;
+
 
     public int maxAliensOnScreen;
     public int totalAliens;
@@ -139,6 +141,8 @@ public class GameManager : MonoBehaviour
                                                                  newAlien.transform.position.y, player.transform.position.z);
                                                                      newAlien.transform.LookAt(targetRotation);
                         alienScript.OnDestroy.AddListener(AlienDestroyed);
+                        alienScript.GetDeathParticles().SetDeathFloor(deathFloor);
+
                     }
                 }
             }
