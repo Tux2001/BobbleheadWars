@@ -16,6 +16,7 @@ public class PlayerController : MonoBehaviour
     public float[] hitForce;
     public float moveSpeed = 50.0f;
     private CharacterController characterController;
+    private DeathParticles deathParticles;
     public Rigidbody head;
     public LayerMask layerMask;
     private Vector3 currentLookTarget = Vector3.zero;
@@ -25,6 +26,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         characterController = GetComponent<CharacterController>();
+        deathParticles = gameObject.GetComponentInChildren<DeathParticles>();
     }
 
     // Update is called once per frame
@@ -124,6 +126,7 @@ public class PlayerController : MonoBehaviour
         head.transform.parent = null;
         head.useGravity = true;
         SoundManager.Instance.PlayOneShot(SoundManager.Instance.marineDeath);
+        deathParticles.Activate();
         Destroy(gameObject);
     }
 }
