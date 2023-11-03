@@ -196,7 +196,7 @@ GameObject:
   - component: {fileID: 156327692}
   - component: {fileID: 156327693}
   - component: {fileID: 156327694}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: WallTrigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2234,7 +2234,7 @@ MonoBehaviour:
   deathFloor: {fileID: 1389692224}
   arenaAnimator: {fileID: 976232858}
   maxAliensOnScreen: 10
-  totalAliens: 10
+  totalAliens: 20
   minSpawnTime: 0
   maxSpawnTime: 3
   aliensPerSpawn: 1
