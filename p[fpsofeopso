@@ -1,0 +1,23 @@
+[33mcommit ec94d1160933b120bb825c0df9b97433f29a19fa[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: tux2001 <deanmartel2001@outlook.com>
+Date:   Fri Nov 3 13:20:06 2023 -0400
+
+    Ch8-Final Game
+
+[33mcommit e015591da7651c420f412e9762f08dc01bebd76c[m
+Author: tux2001 <deanmartel2001@outlook.com>
+Date:   Thu Oct 19 21:48:37 2023 -0400
+
+    Ch8-Added Win Condition & Updated Scripts
+
+[33mcommit c35fb003fcf0ec397fa34da26cedbe2f77789e25[m
+Author: tux2001 <deanmartel2001@outlook.com>
+Date:   Thu Oct 19 20:48:31 2023 -0400
+
+    Ch8-Added Particle Effects to Models && Added 'DeathParticles' Script
+
+[33mcommit 332a68aa0582433aa979a09c8c8e56891fd9e0eb[m
+Author: tux2001 <deanmartel2001@outlook.com>
+Date:   Thu Oct 19 20:03:32 2023 -0400
+
+    Test
